@@ -98,11 +98,11 @@ dataSource:
 environments:
     development:
         dataSource:
-            dbCreate: validate
+            dbCreate: none
             url: jdbc:mysql://localhost:3306/sakila?useSSL=false
     test:
         dataSource:
-            dbCreate: validate
+            dbCreate: none
             url: jdbc:mysql://localhost:3306/sakila?useSSL=false
     production:
         dataSource:

@@ -11,7 +11,7 @@ class Film {
     BigDecimal replacementCost
     String specialFeatures
     Date lastUpdated
-    Rating rating
+    String rating
 
     Language language
     Language originalLanguage
@@ -37,7 +37,7 @@ class Film {
         description nullable: true
         releaseYear nullable: true
         length nullable: true
-        rating nullable: true, enumType: 'identity'
+        rating nullable: true, inList: ['G', 'PG', 'PG-13', 'R', 'NC-17']
         specialFeatures nullable: true
     }
 }
