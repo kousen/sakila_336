@@ -13,7 +13,6 @@ class Country {
         id column: 'country_id'
         name column: 'country'
         lastUpdated column: 'last_update'
-        version false
     }
 
     static constraints = {
